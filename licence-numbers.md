@@ -8,7 +8,7 @@ The licence number is a 10 character code, used to indicate the availability of 
 * SS for Scottish solicitors
 * XX for others without client accounting
 
-3 upper-case letters or numeric digits: (used for installed and licensed options)
+3 upper-case letters or numeric digits: (used to indicate installed and licensed options)
 
 * third char = 4 indicates Amicus Attorney interface
 

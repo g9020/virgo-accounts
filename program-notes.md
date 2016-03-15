@@ -2,61 +2,43 @@
 
 The source code for Virgo Accounts is supplied in two files VIRGO.RSA and VIRGO.GSA. The former contains all the routines (plus a few strays) in routine save format, and the latter contains the required globals (^HELP, ^MENU, ^MENU1, ^NAMES and ^SCREEN) in global save format.
 
-Whilst DTM supports multi-user applications, Virgo Accounts does not include any file and/or record locking and so is a single-user system.
+Whilst DTM supports multi-user applications, Virgo Accounts does not include any record or file locking and so is a single-user system.
 
-This brief (and possibly incomplete) notes describe the development and maintenance tools, and the subroutines used in Virgo Accounts. E&OE
+These brief (and possibly incomplete) notes describe the development and maintenance tools, and the subroutines used in Virgo Accounts. The application routine names are generally four letters beginning XS. E&OE
 
 ## Standard Utilities, Subroutines and Globals
 
 ### Utilities:
 
-KILLPW - delete system password
-
-SCRDEF - screen definition maintenance
-
-SCRDFP - screen definition print
-
-SETPW - set system password
-
-XSX - main menu
-
-XSY - enquiries menu
+* KILLPW - delete system password
+* SCRDEF - screen definition maintenance
+* SCRDFP - screen definition print
+* SETPW - set system password
+* XSX - main menu
+* XSY - enquiries menu
 
 ### Subroutines:
 
-Cont(x) - wait for key press
-
-DATE - date and time processing routine
-
-DOSDEV - get a DOS file name
-
-GETX - read X value for Option prompt
-
-INPASSW - password input routine
-
-INPUT - standard input routine
-
-OUTPUT - open a printer or DOS file for reports
-
-READX - input field (subroutine for INPUT)
+* Cont(x) - wait for key press
+* DATE - date and time processing routine
+* DOSDEV - get a DOS file name
+* GETX - read X value for Option prompt
+* INPASSW - password input routine
+* INPUT - standard input routine
+* OUTPUT - open a printer or DOS file for reports
+* READX - input field (subroutine for INPUT)
 
 ### Globals:
 
-^SCREEN - screen definitions
-
-^SEARCH - search facility
-
-^HELP - help text
-
-^MENU - main menu
-
-^MENU1 - enquiries menu
-
-^NAMES - pseudonyms
-
-^Access - passwords
-
-^SYS - parameters
+* ^SCREEN - screen definitions
+* ^SEARCH - search facility
+* ^HELP - help text
+* ^MENU - main menu
+* ^MENU1 - enquiries menu
+* ^MENU1 - enquiries menu
+* ^NAMES - pseudonyms
+* ^Access - passwords
+* ^SYS - parameters
 
 ### Utilities
 
@@ -64,7 +46,7 @@ READX - input field (subroutine for INPUT)
 
 Purpose: Program to input, amend and delete screen definitions.
 
-Variables: Stand-alone routine - all variables locally defined/used
+Variables: Stand-alone routine - all variables are defined and used locally
 
 Globals: ^SCREEN, ^SCREEN(0) contains the prompts for screen definitions
 
@@ -96,21 +78,14 @@ Purpose: Main menu, started automatically when Virgo Accounts starts.
 
 Variables:
 
-% - field delimiter "^"
-
-P1-P5 - escape sequences for, respectively, prompt text, input text, error messages, screen headers and other text
-
-PU - a row of 80 underscores
-
-PX - sub-menu number
-
-H0 - type of firm
-
-H1 - system name
-
-H2 - program description
-
-PGM - program name
+* % - field delimiter "^"
+* P1-P5 - escape sequences for, respectively, prompt text, input text, error messages, screen headers and other text
+* PU - a row of 80 underscores
+* PX - sub-menu number
+* H0 - type of firm
+* H1 - system name
+* H2 - program description
+* PGM - program name
 
 Globals: ^Access, ^MENU, ^SYS
 
@@ -124,21 +99,16 @@ Purpose: Routine to convert dates and time. Converts $H format to or from DD/MM/
 
 Variables:
 
-DAT - the date in DD/MM/YYYY format
-
-%DAT - the date in DD/MM/YYYY format
-
-TIM - the time in HH:MM format
-
-%H - the date and time (or date only) in $H format
+* DAT - the date in DD/MM/YYYY format
+* %DAT - the date in DD/MM/YYYY format
+* TIM - the time in HH:MM format
+* %H - the date and time (or date only) in $H format
 
 Entry points:
 
-^DATE - returns DAT and TIM for $H (i.e. today's date and the present time)
-
-H2DMY^DATE - converts %H (or $H) to %DAT
-
-DMY2H^DATE - converts DAT to %H
+* ^DATE - returns DAT and TIM for $H (i.e. today's date and the present time)
+* H2DMY^DATE - converts %H (or $H) to %DAT
+* DMY2H^DATE - converts DAT to %H
 
 #### Subroutine: DOSDEV
 
@@ -154,7 +124,7 @@ Subroutines: INPUT
 
 Purpose: Requests input of a password.
 
-Variables: ...
+Variables: 
 
 Globals: ^Access
 
@@ -164,45 +134,31 @@ Purpose: General screen input and amendment routine, giving one prompt per line.
 
 Variables:
 
-%S - screen number (must be defined on entry)
-
-%J - field number (must be defined on entry)
-
-X - input variable
-
-ERR - an error message (only defined if the input fails a validation check)
-
-other % variables used internally
+* %S - screen number (must be defined on entry)
+* %J - field number (must be defined on entry)
+* X - input variable
+* ERR - an error message (only defined if the input fails a validation check)
+* other % variables used internally
 
 Globals: ^SCREEN, ^HELP, ^SEARCH
 
 Entry points:
 
-A^INPUT - for amendment
-
-D^INPUT - to display
+* A^INPUT - for amendment
+* D^INPUT - to display
 
 INPUT includes the following validation routines:
 
-DATE - Checks for a valid date. May be input as D/M/Y or D/M or -N where N is an offset from today, and is converted to DD/MM/YYYY format
-
-TIME - Checks for a valid time. May be input as H:M and is converted to HH:MM
-
-EXIST - Checks for the existence of a record
-
-NOTEX - Checks that a record does not exist
-
-EXDISP - Checks for the existence of a record and displays the description of the relevant field
-
-AMOUNT - Checks that the value input is an amount (up to 7 numeric digits optionally followed by a decimal point and one or two further digits); * is also valid
-
-AMOUNTN - Checks that the value input is either an amount optionally preceded by a minus sign; * is also valid
-
-NUMBER - Checks for a valid number
-
-YESNO - Checks that the value input is either a "Y" or "N"
-
-INPUT also includes HELP and SEARCH routines.
+* DATE - Checks for a valid date. May be input in various formats (see user manual) and is converted to DD/MM/YYYY format
+* TIME - Checks for a valid time. May be input as H:M and is converted to HH:MM
+* EXIST - Checks for the existence of a record
+* NOTEX - Checks that a record does not exist
+* EXDISP - Checks for the existence of a record and displays the relevant description
+* AMOUNT - Checks that the value input is an amount (up to 7 numeric digits optionally followed by a decimal point and one or two further digits); * is also valid
+* AMOUNTN - Checks that the value input is either an amount optionally preceded by a minus sign; * is also valid
+* NUMBER - Checks for a valid number
+* YESNO - Checks that the value input is either a "Y" or "N"
+* also includes HELP and SEARCH routines.
 
 Entry of "?" in any field invokes HELP, which displays text from the ^HELP global.
 
@@ -218,7 +174,7 @@ Globals: none
 
 Subroutines: none
 
-### Standard Global Layouts
+### Globals
 
 Kn indicates a key field
 
