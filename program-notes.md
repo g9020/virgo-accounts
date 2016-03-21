@@ -27,6 +27,7 @@ These brief (and possibly incomplete) notes describe the development and mainten
 * INPUT - standard input routine
 * OUTPUT - open a printer or DOS file for reports
 * READX - input field (subroutine for INPUT)
+* printstat - check that printer is ready (parallel printer only?; no source code available; probably of little use)
 
 ### Globals:
 
