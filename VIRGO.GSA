@@ -1,0 +1,2042 @@
+;Global Save - 01:27 PM  Mar 4, 2016 (DTM-PC/4.3M)
+;Saved From USER: Virgo Accounts globals
+^HELP("AA",0,1)
+    ****************** Virgo Accounts - General Help ******************
+^(2)
+ 
+^(3)
+Each entry is terminated by pressing the Enter key. To accept a default value,
+^(4)
+if available, just press Enter. To input a value other than a default, just
+^(5)
+type in the new value and press Enter. In amend mode you may edit the previous
+^(6)
+value using the cursor left and right keys, Delete, Backspace, Home, End and
+^(7)
+Ctrl+Del. F1 in any prompt will display a help screen specific to that entry,
+^(8)
+if available, or this screen if no field specific help is available. F2 will
+^(9)
+provide a search facility in many fields, including Client code, Matter code.
+^(11)
+Esc in the first prompt will exit the program; in other fields it will return
+^(12)
+you to the start of the program.
+^HELP("AA","AX2",0)
+Enter a nominal account code, or press F2 for the search facility
+^HELP("AA","CX",0)
+Enter a client code, or press F2 for the search facility
+^HELP("AA","FX",0)
+Enter a fee earner number, or press F2 for the search facility
+^HELP("AA","MX",0)
+Enter a matter code, or press F2 for the search facility
+^HELP("AA","RX",0)
+Enter a charge group code, or press F2 for the search facility
+^HELP("AAIN","FN",0)
+Enter the name of the file - in the format N-MMDDYY.F where
+^(1)
+ N is a sequential number for the day, usually 1
+^(2)
+ MMDDYY is the date
+^(3)
+ F is the fee earner, usually 1
+^HELP("AASET","D0",0)
+Enter the drive and directory for time imports
+^HELP("AATIME","A0",0)
+Enter the date of the time sheet
+^HELP("AATIME","A3",0)
+Enter the activity code (which must be defined for the selected charge group)
+^(1)
+or press F2 for the search facility
+^HELP("AATIME","A4",0)
+Enter the number of units of time spent on this activity
+^HELP("AATIME","A5",0)
+Enter the number of items
+^HELP("AATIME","CX",0)
+Enter a client code, or press F2 for the search facility. Press Esc to exit
+^(1)
+input mode
+^HELP("EXPORT","AB",0)
+Enter Y to export the nominal account balances, otherwise enter nothing
+^HELP("EXPORT","AY",0)
+Enter Y to export the nominal account transactions, otherwise enter nothing
+^HELP("EXPORT","CB",0)
+Enter Y to export the cashbook transactions, otherwise enter nothing
+^HELP("EXPORT","CL",0)
+Enter Y to export the client account transactions, otherwise enter nothing
+^HELP("EXPORT","ML",0)
+Enter Y to export the matter ledger transactions, otherwise enter nothing
+^HELP("EXPORT","SA",0)
+Enter Y to export the fee rate tables, otherwise enter nothing
+^HELP("EXPORT","SB",0)
+Enter Y to export the bill details, otherwise enter nothing
+^HELP("EXPORT","SC",0)
+Enter Y to export the client details, otherwise enter nothing
+^HELP("EXPORT","SD",0)
+Enter Y to export the 'historical' transactions, otherwise enter nothing
+^HELP("EXPORT","SF",0)
+Enter Y to export the fee earner details, otherwise enter nothing
+^HELP("EXPORT","SM",0)
+Enter Y to export the matter details, otherwise enter nothing
+^HELP("EXPORT","SV",0)
+Enter Y to export the VAT file, otherwise enter nothing
+^HELP("EXPORT","SW",0)
+Enter Y to export the work-in-progress, otherwise enter nothing
+^HELP("EXPORT","SZ",0)
+Enter Y to export the system parameters, otherwise enter nothing
+^HELP("EXPORT","TE",0)
+Enter Y to export the detailed time transactions, otherwise enter nothing
+^HELP("R2PRINT",1,0)
+Enter Y to print to the specified printer
+^(1)
+      N or press Esc to abort printing
+^(2)
+      SP to print to the spooler
+^(3)
+      WB to print to a web browser
+^(4)
+      F:xxxx to print to a file named XXXX.TXT
+^(5)
+Please refer to the manual for full details and other options
+^HELP("SETCOL","A1",0)
+Enter the number corresponding to the colour you require
+^HELP("SETCOL","A2",0)
+Enter the number corresponding to the colour you require
+^HELP("SETCOL","A3",0)
+Enter the number corresponding to the colour you require
+^HELP("SETCOL","A4",0)
+Enter the number corresponding to the colour you require
+^HELP("SETCOL","A5",0)
+Enter the number corresponding to the colour you require
+^HELP("SETCOL","A6",0)
+Enter the number corresponding to the colour you require
+^(1)
+The background colour must be a number between 0 and 7
+^HELP("SETPTR","A1",0)
+Enter the printer port id (LPT1, LPT2, LPT3 or LPT4)
+^(1)
+ or WB to print to a web browser
+^HELP("SETPTR","A2",0)
+Please leave this field blank
+^HELP("XS",0,1)
+    ****************** Virgo Accounts - General Help ******************
+^(2)
+ 
+^(3)
+Each entry is terminated by pressing the Enter key. To accept a default value,
+^(4)
+if available, just press Enter. To input a value other than a default, just
+^(5)
+type in the new value and press Enter. In amend mode you may edit the previous
+^(6)
+value using the cursor left and right keys, Delete, Backspace, Home, End and
+^(7)
+Ctrl+Del. F1 in any prompt will display a help screen specific to that entry,
+^(8)
+if available, or this screen if no field specific help is available. F2 will
+^(9)
+provide a search facility in many fields, including Client code, Matter code.
+^(11)
+Esc in the first prompt will exit the program; in other fields it will return
+^(12)
+you to the start of the program.
+^HELP("XS","AX",0)
+Enter a nominal account code, or press F2 for the search facility
+^HELP("XS","AX1",0)
+Enter a nominal account code, or press F2 for the search facility
+^HELP("XS","AX2",0)
+Enter a nominal account code, or press F2 for the search facility
+^HELP("XS","BX",0)
+Enter a bill number, or press F2 for a list of unpaid bills
+^HELP("XS","CX",0)
+Enter a client code, or press F2 for the search facility
+^HELP("XS","CX1",0)
+Enter a client code, or press F2 for the search facility
+^HELP("XS","CX2",0)
+Enter a client code, or press F2 for the search facility
+^HELP("XS","D1",0)
+Enter the date of the transaction
+^HELP("XS","D2",0)
+Enter the amount of the transaction
+^HELP("XS","D4",0)
+Enter a transaction reference (eg. a cheque or chitty number) - optional
+^HELP("XS","D5",0)
+Enter a description of the transaction including the payee/payer name
+^HELP("XS","DX",0)
+Enter a cashbook number, or press F2 for the search facility
+^(1)
+Note that office cashbooks are in the range 1-99 and client cashbooks in the
+^(2)
+range 100-999
+^HELP("XS","DX2",0)
+Enter a cashbook number, or press F2 for the search facility
+^(1)
+Note that office cashbooks are in the range 1-99 and client cashbooks in the
+^(2)
+range 100-999
+^HELP("XS","FX",0)
+Enter a fee earner number, or press F2 for the search facility
+^HELP("XS","MX",0)
+Enter a matter code, or press F2 for the search facility
+^HELP("XS","MX1",0)
+Enter a matter code, or press F2 for the search facility
+^HELP("XS","MX2",0)
+Enter a matter code, or press F2 for the search facility
+^HELP("XS","O1",0)
+Enter the date of the transaction
+^HELP("XS","O2",0)
+Enter the net amount of the transaction
+^HELP("XS","O3",0)
+Enter the VAT amount of the transaction. If the transaction is outside the
+^(1)
+scope of VAT enter *
+^HELP("XS","O4",0)
+Enter a transaction reference (eg. a cheque or chitty number) - optional
+^HELP("XS","O5",0)
+Enter a description of the transaction including the payee/payer name
+^HELP("XS","RX",0)
+Enter a charge group code, or press F2 for the search facility
+^HELP("XSAA","C1",0)
+Enter the client's name. If you wish to use the search facility to search by
+^(1)
+surname then enter the surname first; e.g. Smith, Mr AJ
+^HELP("XSAA","C10",0)
+The narrative may be used for additional description or notes about the client
+^HELP("XSAA","C11",0)
+The narrative may be used for additional description or notes about the client
+^HELP("XSAA","C2",0)
+Enter the client's address (optional)
+^HELP("XSAA","C3",0)
+Enter the client's address (optional)
+^HELP("XSAA","C4",0)
+Enter the client's address (optional)
+^HELP("XSAA","C5",0)
+Enter the client's address (optional)
+^HELP("XSAA","C6",0)
+Enter the client's address (optional)
+^HELP("XSAA","C7",0)
+Enter the client's telephone number (optional)
+^HELP("XSAA","C8",0)
+Enter the client's fax number (optional)
+^HELP("XSAA","C9",0)
+The narrative may be used for additional description or notes about the client
+^HELP("XSAA","CX",0)
+Enter a client code, or press F2 for the search facility
+^(1)
+To input a new client, enter a client code that has not already been used
+^HELP("XSAB","M1",0)
+Enter a description of the matter
+^HELP("XSAB","M10",0)
+This is the client bank account into which any client funds for this matter
+^(1)
+will be deposited. It may be a general account (cashbook 100 or 101) or a
+^(2)
+designated account. If a designated account, you will need to set up a new
+^(3)
+cashbook before setting up the matter
+^HELP("XSAB","M11",0)
+The narrative may be used for additional description or notes about the matter
+^HELP("XSAB","M12",0)
+The narrative may be used for additional description or notes about the matter
+^HELP("XSAB","M13",0)
+The narrative may be used for additional description or notes about the matter
+^HELP("XSAB","M14",0)
+The Action Date and Budget fields are used in conjunction with the Matter
+^(1)
+Limits Report to give an 'early warning' of matters that require attention.
+^(2)
+Note that the budget is for time + disbursements
+^HELP("XSAB","M2",0)
+The Action Date and Budget fields are used in conjunction with the Matter
+^(1)
+Limits Report to give an 'early warning' of matters that require attention.
+^(2)
+Note that the budget is for time + disbursements
+^HELP("XSAB","M3",0)
+Enter Y if the matter is a Legal Aid matter, or N otherwise
+^HELP("XSAB","M4",0)
+Enter Y if the matter is a stakeholder matter, or N otherwise
+^HELP("XSAB","M5",0)
+Enter Y if the matter is a trust matter, or N otherwise
+^HELP("XSAB","M6",0)
+Enter Y if the matter is VATable, or N otherwise
+^HELP("XSAB","M7",0)
+This is the default charge group for the matter; press F2 for the search
+^(1)
+facility
+^HELP("XSAB","M7B",0)
+Enter an activity code which will be used as a default for time recording,
+^(1)
+or just press Return
+^HELP("XSAB","M8",0)
+Analysis codes A and B may be used to classify matters, for example by
+^(1)
+fee earner, work type, etc.
+^HELP("XSAB","M9",0)
+Analysis codes A and B may be used to classify matters, for example by
+^(1)
+fee earner, work type, etc.
+^HELP("XSAB","SMO1",0)
+Enter the date the matter was opened
+^HELP("XSAD","A1",0)
+This is likely to be a long report. Enter the confirmation code.
+^HELP("XSAD","A2",0)
+Enter Y for a detailed client and matter list, or N for a summary list
+^HELP("XSAD","CX",0)
+Enter the client code, or * to print the details of all clients and matters.
+^(1)
+Press F2 for the search facility
+^HELP("XSAE","A1",0)
+Enter Y to search for stakeholder matters
+^(1)
+      N to search for non stakeholder matters
+^(2)
+      or just press Enter if you don't care
+^HELP("XSAE","A2",0)
+Enter Y to search for legal aid matters
+^(1)
+      N to search for non legal aid matters
+^(2)
+      or just press Enter if you don't care
+^HELP("XSAE","A3",0)
+Enter Y to search for trust matters
+^(1)
+      N to search for non trust matters
+^(2)
+      or just press Enter if you don't care
+^HELP("XSAE","A4",0)
+Enter a value for matters with Analysis A equal to that value, or just press
+^(1)
+Enter if you don't care
+^HELP("XSAE","A5",0)
+Enter a value for matters with Analysis B equal to that value, or just press
+^(1)
+Enter if you don't care
+^HELP("XSAE","A6",0)
+Enter a charge group code for matters in that charge group, or just press
+^(1)
+Enter if you don't care
+^HELP("XSAE","A7",0)
+Enter a few characters of matter description or just press Enter if you don't
+^(1)
+care. Note: you cannot enter nothing for all options
+^HELP("XSAE","A9",0)
+Enter Y to omit closed matters, otherwise enter N
+^HELP("XSAF","A1",0)
+Enter Y to run the program automatically each day when the system is first
+^(1)
+started, otherwise enter N
+^HELP("XSAF","A2",0)
+Enter the number of days warning for matters nearing their Action Date
+^HELP("XSAF","A3",0)
+Enter the percentage difference for matters nearing their Budget limit
+^(1)
+The budget figure is for time + disbursements
+^HELP("XSAH","A1",0)
+Enter Y to search for stakeholder matters
+^(1)
+      N to search for non stakeholder matters
+^(2)
+      or just press Enter if you don't care
+^HELP("XSAH","A10",0)
+Enter Y to list client names and addresses only - useful for address labels
+^HELP("XSAH","A2",0)
+Enter Y to search for legal aid matters
+^(1)
+      N to search for non legal aid matters
+^(2)
+      or just press Enter if you don't care
+^HELP("XSAH","A3",0)
+Enter Y to search for trust matters
+^(1)
+      N to search for non trust matters
+^(2)
+      or just press Enter if you don't care
+^HELP("XSAH","A4",0)
+Enter a value for matters with Analysis A equal to that value, or just press
+^(1)
+Enter if you don't care
+^HELP("XSAH","A5",0)
+Enter a value for matters with Analysis B equal to that value, or just press
+^(1)
+Enter if you don't care
+^HELP("XSAH","A6",0)
+Enter a charge group code for matters in that charge group, or just press
+^(1)
+Enter if you don't care
+^HELP("XSAH","A7",0)
+Enter a few characters of matter description or just press Enter if you don't
+^(1)
+care. Note: you cannot enter nothing for all options
+^HELP("XSAH","A9",0)
+Enter Y to omit closed matters, otherwise enter N
+^HELP("XSAJ","D1",0)
+Enter the date the matter was closed, or * to re-open the matter
+^HELP("XSAK","A1",0)
+Enter the start date for the listing
+^HELP("XSAK","A2",0)
+Enter the end date for the listing
+^HELP("XSAK","A3",0)
+Enter A, B or C as appropriate
+^HELP("XSAK","X3",0)
+Enter O for a list of matters opened between the selected dates
+^(1)
+   or C for a list of matters closed between the selected dates
+^HELP("XSBA","D2",0)
+Enter the net amount of the transaction
+^HELP("XSBA","D3",0)
+Enter the amount of VAT, which may be 0, or * if the transaction is outside
+^(1)
+the scope of VAT
+^HELP("XSBC","B1",0)
+Enter the date of the bill
+^HELP("XSBC","B2",0)
+Enter the amount of fees included in the bill; this may be more or less than
+^(1)
+(or the same as) the amount of work-in-progress recorded for the matter
+^HELP("XSBC","B3",0)
+Enter the amount of time to remove from work-in-progress; if you remove more
+^(1)
+time than has been recorded then a negative anticipated time entry will be
+^(2)
+created
+^HELP("XSBC","B4",0)
+Enter the disbursement element of the bill. Note that irrespective of the
+^(1)
+value entered ALL disbursements will be written off unless you indicate
+^(2)
+otherwise on the Disbursements screen. If you include more disbursements
+^(3)
+than have been recorded then a negative anticipated disbursement entry
+^(4)
+will be created
+^HELP("XSBC","B5",0)
+Enter the amount of VAT, which may be 0, or * if the transaction is outside
+^(1)
+the scope of VAT
+^HELP("XSBC","C5",0)
+Enter a narrative for the bill
+^HELP("XSBC","E8",1)
+If the bill includes any unpaid 'professional' disbursements, enter Y
+^(2)
+otherwise, enter N
+^HELP("XSBE","R6",0)
+Enter Y if you wish to reinstate all balances and transactions to their
+^(1)
+state before the bill was posted. This can only be done if the bill is
+^(2)
+is unpaid. Otherwise enter N
+^HELP("XSBF","O3",0)
+Enter the amount of VAT, which may be 0, or * if the transaction is outside
+^(1)
+the scope of VAT
+^HELP("XSBG","O3",0)
+Enter the amount of VAT, which may be 0, or * if the transaction is outside
+^(1)
+the scope of VAT
+^HELP("XSBH","O2",0)
+Enter the amount to transfer
+^HELP("XSBJ","O2",0)
+Enter the amount to transfer
+^HELP("XSBM","B4",0)
+Enter the amount of VAT, which may be 0, or * if the transaction is outside
+^(1)
+the scope of VAT
+^HELP("XSBM","CX",0)
+Enter a client code, or press F2 for the search facility. Press Esc to exit
+^(1)
+input mode
+^HELP("XSBN","O2",0)
+Enter the amount to transfer
+^HELP("XSBP","AX2",0)
+Enter the nominal account code for the creditor, or press F2 for the search
+^(1)
+facility. Note: the account must be a liability account
+^HELP("XSCD","MX",0)
+Enter the matter code, or * to display totals for all matters for the client.
+^(1)
+Press F2 for the search facility
+^HELP("XSCK","D1",0)
+Enter the date for which you want to list the transactions
+^HELP("XSCK","DX",0)
+Enter a cashbook number, or * to print all cashbooks
+^HELP("XSDA","FN",1)
+Enter the name of a file - between 1 and 8 alpha-numeric characters.
+^(2)
+The file name will be given an extension of .SPS and will be stored in your
+^(3)
+Virgo Accounts folder.
+^HELP("XSDA","PW",1)
+Enter P to print the draft bill or W to write it to a word processor file
+^HELP("XSDI","A1",0)
+Enter the start date for the analysis
+^HELP("XSDI","A2",0)
+Enter the end date for the analysis
+^HELP("XSDI","A3",0)
+Enter A, B or C as appropriate
+^HELP("XSDI","A4",0)
+Enter Y to include only Legal Aid matters
+^(1)
+      N to exclude Legal Aid matters
+^(2)
+      or press Enter to include all matters
+^HELP("XSDJ","A1",0)
+Enter a 'from' amount or just press Enter to ignore the bills account
+^HELP("XSDJ","A11",0)
+Enter a 'from' amount or just press Enter to ignore the interest account
+^HELP("XSDJ","A12",0)
+If you entered a 'from' amount, enter a 'to' amount here
+^HELP("XSDJ","A2",0)
+If you entered a 'from' amount, enter a 'to' amount here
+^HELP("XSDJ","A3",0)
+Enter a 'from' amount or just press Enter to ignore the disbursement account
+^HELP("XSDJ","A4",0)
+If you entered a 'from' amount, enter a 'to' amount here
+^HELP("XSDJ","A5",0)
+Enter a 'from' amount or just press Enter to ignore the client account
+^HELP("XSDJ","A6",0)
+If you entered a 'from' amount, enter a 'to' amount here
+^HELP("XSDJ","A7",0)
+Enter a 'from' amount or just press Enter to ignore the WIP account
+^HELP("XSDJ","A8",0)
+If you entered a 'from' amount, enter a 'to' amount here
+^HELP("XSDJ","A9",0)
+Enter A for all accounts or S for some accounts (note S lists more matters)
+^HELP("XSDK","A1",0)
+Enter Y to omit matters with a zero balance on all accounts
+^(1)
+      N otherwise
+^HELP("XSDK","A3",0)
+Enter A, B or C as appropriate
+^HELP("XSEA","A0",0)
+Enter the date of the time sheet
+^HELP("XSEA","A3",0)
+Enter the activity code (which must be defined for the selected charge group)
+^(1)
+or press F2 for the search facility
+^HELP("XSEA","A4",0)
+Enter the number of units of time spent on this activity
+^HELP("XSEA","A5",0)
+Enter the number of items
+^HELP("XSEA","CX",0)
+Enter a client code, or press F2 for the search facility. Press Esc to exit
+^(1)
+input mode
+^HELP("XSEB","D1",0)
+Enter the value (in Pounds and Pence) of work-in-progress to write off
+^HELP("XSED","A3",0)
+Enter A, B or C as appropriate
+^HELP("XSEF","A1",0)
+Enter the date up to which you wish entries to be removed
+^HELP("XSFC","A1",0)
+Enter Y if the transfer is to settle or part-settle a bill. You will be asked
+^(1)
+for the bill number
+^HELP("XSFF","A1",0)
+Enter Y to omit matters with a zero balance on client account
+^(1)
+      N otherwise
+^HELP("XSFH","D2",0)
+Enter the amount of interest you are paying the client. Note that the nominal
+^(1)
+interest is only a guide
+^HELP("XSFK","A1",0)
+This is likely to be a long report. Enter the confirmation code. You are
+^(1)
+advised to write this report to a file, and then print it
+^HELP("XSFK","A2",0)
+Enter the date to start listing from, or just press Enter to start at the
+^(1)
+beginning
+^HELP("XSFK","A3",0)
+Enter the date to end the list or just press Enter for today's date
+^HELP("XSFK","A4",0)
+Enter Y to print only client interest transactions
+^(1)
+   or N to print all transactions
+^HELP("XSGA","A1",0)
+Enter the name of your practice
+^HELP("XSGA","A10",0)
+Set to N if you do not wish day end processing to be run every day
+^HELP("XSGA","A11",0)
+Enter Y if you wish to keep detailed time entries
+^HELP("XSGA","A12",0)
+Set to N if you wish to allow posting dates earlier than 30 days ago
+^HELP("XSGA","A13",0)
+Enter the number of an office cashbook, or press F2 for the search facility.
+^(1)
+This will be the default cashbook for all cash postings to or from office.
+^HELP("XSGA","A15",0)
+Enter Y if you wish to allow client accounts to become overdrawn
+^(1)
+   or N otherwise
+^(2)
+NOTE: IT IS A CONTRAVENTION OF THE SAR TO OVERDRAW A CLIENT ACCOUNT
+^HELP("XSGA","A16",0)
+Enter Y if you wish disbursements to be written off by default when posting
+^(1)
+   a bill; or N if you do NOT wish disbursements to be written by default
+^HELP("XSGA","A17",0)
+Enter the default charge group for when opening new matters (if any)
+^HELP("XSGA","A3",0)
+Enter your software licence number (see your 'welcome' letter)
+^HELP("XSGA","A4",0)
+Set to Y if you are on a cash basis for VAT, or to N if you are on a bills
+^(1)
+raised basis. Note that you must run the VAT Report and delete the VAT file
+^(2)
+before you may change this flag
+^HELP("XSGA","A5",0)
+Enter the number of minutes that make up a 'unit' for time recording
+^HELP("XSGA","A8",0)
+Enter the date of your NEXT year end
+^HELP("XSGA","A9",0)
+Enter the usual rate of VAT; this is only used to calculate default values
+^HELP("XSGB","F1",0)
+Enter the fee earner's name
+^HELP("XSGC","A1",0)
+Enter an activity code (which must already have been set up)
+^HELP("XSGC","A2",0)
+Enter either an hourly rate or a rate per item (depending on the activity)
+^HELP("XSGC","A3",0)
+Enter either an hourly rate or a rate per item (depending on the activity)
+^HELP("XSGC","R1",0)
+Enter a description for the charge group
+^HELP("XSGD","A1",0)
+Enter a description for the account
+^HELP("XSGD","B1",0)
+(Optional) Enter a value for the annual budget.
+^HELP("XSGE","C1",0)
+Enter the name of the account
+^HELP("XSGE","C2",0)
+Enter the bank sort code for the account (optional)
+^HELP("XSGE","C3",0)
+Enter the bank account number of the account (optional)
+^HELP("XSGE","C4",0)
+Enter Y if this is a trust account
+^HELP("XSGF","D0",0)
+Enter a unique number for this standing order
+^HELP("XSGF","D1",0)
+Enter the start date for this standing order - this may be in the past
+^(1)
+or in the future
+^HELP("XSGF","D2",0)
+Enter the end date for the standing order
+^HELP("XSGF","D3",0)
+Enter P for a payment or R for a receipt
+^HELP("XSGF","D4",0)
+Enter the number of days or months this standing order is to be repeated
+^(1)
+followed by 'D' (for days) or 'M' (for months)
+^(2)
+ 
+^(3)
+e.g. 30d (every 30 days) or 1m (every month)
+^HELP("XSGI","A1",0)
+Enter a description for the activity
+^HELP("XSGI","SX",0)
+Enter the activity code
+^HELP("XSHB","C1",0)
+Enter Y to check the consistency of the data
+^HELP("XSHB","C2",0)
+Enter Y to recreate the index files. This should not usually be necessary but
+^(1)
+will cause no harm if selected.
+^HELP("XSHB","C3",0)
+Enter Y to compress the data files. This option should be selected
+^(1)
+occassionally but should not be necessary every time
+^HELP("XSHD","A1",0)
+Enter the period end confirmation code
+^HELP("XSHD","A2",0)
+Enter Y if you wish to print the transactions on each account, otherwise
+^(1)
+enter N
+^HELP("XSHE","A1",0)
+Enter the year end confirmation code
+^MENU
+10.73
+^MENU(0,1)
+Client & Matter Details^1
+^(2)
+Office Accounting^2
+^(3)
+Enquiries^3
+^(4)
+Accounting Reports^4
+^(5)
+Time Recording^5
+^(6)
+Client Accounting^6
+^MENU(0,6,"IF")
+$e(H0,1)="X"
+^MENU(0,7)
+System Maintenance^7
+^(8)
+Additional Options^10
+^MENU(0,8,"IF")
+$e(H0,5)'="4"
+^MENU(0,9)
+Miscellaneous Options^8
+^(12)
+Month End Procedures^12
+^MENU(1)
+Client & Matter Details
+^MENU(1,1)
+Maintain Client Details^XSAA
+^(2)
+Maintain Matter Details^XSAB
+^(3)
+Client/Matter Enquiry^XSAD
+^(4)
+Matter Search^XSAE
+^(5)
+Exception Report^XSDJ
+^(6)
+Matter Limits Report^XSAF
+^(7)
+Action Date Listing^XSAG
+^(8)
+Detailed Matter Listing^XSAH
+^(9)
+Close Matter^XSAJ
+^(10)
+Opened/Closed Matters^XSAK
+^(11)
+Matters With No Transactions^XSAL
+^(12)
+Matter Progress Report^XSAM
+^MENU(2)
+Office Accounting
+^MENU(2,1)
+Post Disbursement Item^XSBA
+^(2)
+Post Disbursement Batch^XSBM
+^(3)
+Write Off Disbursement^XSBB
+^(4)
+Post Disbursement Receipt^XSBK
+^(5)
+Post Bill^XSBC
+^(6)
+Post Bill Receipt^XSBD
+^(7)
+Post Bill Credit^XSBE
+^(8)
+Post Office Receipt^XSBF
+^(9)
+Post Office Payment^XSBG
+^(10)
+Cashbook Transfer^XSBH
+^(11)
+Journal Transfer^XSBJ
+^(12)
+Transfer Matter Balances^XSBL
+^(13)
+Nominal to Disb Transfer^XSBN
+^(14)
+Post Creditor Invoice^XSBP
+^MENU(3)
+Enquiries
+^MENU(3,1)
+Matter Ledger Enquiry^XSCA
+^(2)
+Cashbook Enquiry^XSCB
+^(3)
+Unpaid Bills Enquiry^XSCC
+^(4)
+Matter Accounts Enquiry^XSCD
+^MENU(3,4,"IF")
+$e(H0,1)="X"
+^MENU(3,5)
+Client Account Enquiry^XSFG
+^MENU(3,5,"IF")
+$e(H0,1)="X"
+^MENU(3,6)
+Work-in-Progress Enquiry^XSEC
+^(7)
+Nominal Account Enquiry^XSCE
+^(8)
+Transaction Search^XSCF
+^(9)
+Matter Transactions Enquiry^XSCJ
+^(10)
+Daily Bank Transactions^XSCK
+^MENU(4)
+Accounting Reports
+^MENU(4,1)
+Draft Bill^XSDA
+^(2)
+Financial Status Report^XSDC
+^(3)
+VAT Report^XSDD
+^(4)
+Profit & Loss Account^XSDE
+^(5)
+Balance Sheet^XSDF
+^(6)
+Trial Balance^XSDG
+^(7)
+Unbilled Disbursements^XSDH
+^(8)
+Exception Report^XSDJ
+^(9)
+Bills Analysis^XSDI
+^(10)
+Matter Balances Analysis^XSDK
+^(11)
+Bank Reconciliation^XSBI
+^(12)
+Average Cost per Case^XSDL
+^(13)
+Matter Balances Listing^XSDM
+^(14)
+Budget Variance Report^XSDN
+^(15)
+Cash Received Analysis^XSDO
+^MENU(5)
+Time Recording
+^MENU(5,1)
+Post Time Sheet^XSEA
+^(2)
+Write Off Time^XSEB
+^(3)
+Work-in-Progress Enquiry^XSEC
+^(4)
+Work-in-Progress Analysis^XSED
+^(5)
+Remove Detailed Time^XSEF
+^(6)
+Time Recorded by F/E^XSEG
+^(7)
+Summarise Detailed Time^XSEH
+^MENU(6)
+Client Accounting
+^MENU(6,1)
+Post Client Receipt^XSFA
+^(2)
+Post Client Payment^XSFB
+^(3)
+Client to Office Transfer^XSFC
+^(4)
+Office to Client Transfer^XSFD
+^(5)
+Client to Client Transfer^XSFE
+^(6)
+Client Account Enquiry^XSFG
+^(7)
+Post Client Interest^XSFH
+^(8)
+Client Account Reconciliation^XSFF
+^(10)
+Maintain Interest Rates^XSFJ
+^(11)
+List All CL Transactions^XSFK
+^(12)
+Cashbook Transfers^XSFM
+^MENU(7)
+System Maintenance
+^MENU(7,1)
+Maintain Parameters^XSGA
+^(2)
+Maintain Fee Earners^XSGB
+^(3)
+Maintain Fee Rate Tables^XSGC
+^(4)
+Maintain Nominal Accounts^XSGD
+^(5)
+Maintain Cashbooks^XSGE
+^(6)
+Maintain Activity Codes^XSGI
+^(7)
+Maintain Standing Orders^XSGF
+^MENU(8)
+Miscellaneous Options
+^MENU(8,1)
+Print System Parameters^XSHA
+^(2)
+Consistency^XSHB
+^(3)
+Day End Processing^XSHC
+^(4)
+Period End Processing^XSHD
+^(5)
+Year End Processing^XSHE
+^(6)
+Export Details^EXPORT
+^(7)
+Print Standing Orders^XSHG
+^(8)
+Despooler^DESPOOL
+^(9)
+Maintain Screen Colours^SETCOL
+^(20)
+BioRhythms^BioRhythm
+^MENU(10)
+Additional Options
+^MENU(10,1)
+Time Import Setup^AASET
+^MENU(10,1,"IF")
+$e(H0,5)'="4"
+^MENU(10,2)
+Export Files and Fee Rates^AAOUT
+^MENU(10,2,"IF")
+$e(H0,5)'="4"
+^MENU(10,3)
+Import Time Details^AAIN
+^MENU(10,3,"IF")
+$e(H0,5)'="4"
+^MENU(12)
+Month End Procedures
+^MENU(12,1)
+Day End Processing^XSHC
+^(2)
+Profit & Loss Account^XSDE
+^(3)
+Period End Processing^XSHD
+^(4)
+Balance Sheet^XSDF
+^(5)
+Bank Reconciliation^XSBI
+^MENU1
+10.72
+^MENU1(0,1)
+Client/Matter Enquiry^XSAD
+^(2)
+Matter Ledger Enquiry^XSCA
+^(3)
+Unpaid Bills Enquiry^XSCC
+^(4)
+Matter Accounts Enquiry^XSCD
+^(5)
+Client Account Enquiry^XSFG
+^(6)
+Work-in-Progress Enquiry^XSEC
+^(7)
+Matter Transactions Enquiry^XSCJ
+^(8)
+Remote Time Input^AATIME
+^MENU1(0,8,"IF")
+$e(H0,5)'="4"
+^NAMES("F1")
+Legal Aid
+^("F2")
+Stakeholder
+^("F3")
+Trust
+^("F7")
+Introduced by
+^("F8")
+Work type
+^SCREEN(0,1)
+Screen no^4^1^S1^^^
+^(2)
+Field no^0^2^S2^^^
+^(3)
+Prompt^13^1^SCA1^^^
+^(4)
+Max length^2^1^SCA2^^^
+^(5)
+Min length^2^1^SCA3^^^
+^(6)
+Variable^6^0^SCA4^^^
+^(7)
+Search file^4^0^SCA5^^^
+^(8)
+Default^10^0^SCA6^^^
+^(9)
+Validation^40^0^SCA7^^^
+^(10)
+Omit if...^40^0^SCB^^^
+^(11)
+END
+^SCREEN(1,1)
+From screen^4^1^S1^^^D V1^SCRDFP
+^(2)
+To screen^4^1^S2^^^D V1^SCRDFP
+^(3)
+END
+^SCREEN(2,1)
+Identity^8^1^AX^^^D CASE
+^(2)
+Pseudonym^15^1^A1^^^
+^(3)
+END
+^SCREEN(4,1)
+Background^1^1^A6^^A6^D V02^SETCOL
+^(2)
+Prompt Text^2^1^A1^^A1^D V01^SETCOL
+^(3)
+Input Field^2^1^A2^^A2^D V01^SETCOL
+^(4)
+Error Message^2^1^A3^^A3^D V01^SETCOL
+^(5)
+Headings^2^1^A4^^A4^D V01^SETCOL
+^(6)
+Other Text^2^1^A5^^A5^D V01^SETCOL
+^(7)
+END
+^SCREEN(5,1)
+Printer ID^4^2^A1^^^D V01^SETPTR
+^(2)
+String^50^0^A2^^^
+^(3)
+END
+^SCREEN(6,1)
+Desktop^40^3^A1^^^D CASE,V01^SETWBD
+^(2)
+Write to File^40^0^A2^^^D V02^SETWBD
+^(3)
+END
+^SCREEN(9,1)
+File name^8^1^FN^^^D V01^DOSDEV
+^(2)
+END
+^SCREEN(1000,1)
+Client Code^4^1^CX^SC^^D CASE,V01^XSAA
+^(2)
+Client Name^30^1^C1^^^
+^(3)
+Address^40^0^C2^^^
+^(4)
+ ^40^0^C3^^^
+^(5)
+ ^40^0^C4^^^
+^(6)
+ ^40^0^C5^^^
+^(7)
+ ^40^0^C6^^^
+^(8)
+Telephone No^20^0^C7^^^
+^(9)
+Fax No^20^0^C8^^^
+^(10)
+Narrative^40^0^C9^^^
+^(11)
+ ^40^0^C10^^^
+^(12)
+ ^40^0^C11^^^
+^(13)
+END
+^SCREEN(1001,1)
+Description^30^1^M1^^^
+^(2)
+@F1@?^1^1^M3^^NO^D YESNO
+^(3)
+@F2@?^1^1^M4^^NO^D YESNO
+^(4)
+@F3@?^1^1^M5^^NO^D YESNO,V02^XSAB
+^(5)
+VATable?^1^1^M6^^YES^D YESNO
+^(6)
+Charge Group^2^1^RX^SR^DCG^D CASE,EXDISP
+^(7)
+Activity^2^0^M7B^SA^^I X'="" D CASE,EXDISP
+^(8)
+@F7@^3^0^M8^^^D CASE
+^(9)
+@F8@^3^0^M9^^^D CASE
+^(10)
+CL Cashbook^3^0^M10^CB^Q10^I X'="" D EXDISP,V01^XSAB
+^SCREEN(1001,10,"IF")
+$e(H0,1)="X"
+^SCREEN(1001,11)
+Opened Date^10^1^SMO1^^DAT^D DATE,DAT1^XSXS
+^(12)
+Action Date^10^0^M2^^^I X'="" D DATE
+^(13)
+Budget^7^0^M14^^^I X'="" D NUMBER
+^(14)
+Narrative^40^0^M11^^^
+^(15)
+ ^40^0^M12^^^
+^(16)
+ ^40^0^M13^^^
+^(17)
+END
+^SCREEN(1002,1)
+@F1@^1^0^A2^^^D YESNO
+^(2)
+@F2@^1^0^A1^^^D YESNO
+^(3)
+@F3@^1^0^A3^^^D YESNO
+^(4)
+Charge Group^2^0^A6^SR^^D CASE
+^(5)
+@F7@^3^0^A4^^^D CASE
+^(6)
+@F8@^3^0^A5^^^D CASE
+^(7)
+Descr/Narr^15^0^A7^^^D V05^XSAE
+^(8)
+END
+^SCREEN(1003,1)
+Client Code^4^1^CX^SC^^D V01^XSAD
+^(2)
+END
+^SCREEN(1004,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Cashbook^2^1^DX^CB^ONE^D EXDISP,V03^XSBA
+^(4)
+CB Balance^0^0^B6^^^
+^(5)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(6)
+Net Amount^10^1^D2^^^D AMOUNTN,V01^XSBA
+^(7)
+VAT Amount^10^1^D3^^E1^D AMOUNTN,V02^XSBA
+^(8)
+Gross Amount^0^0^E2^^^
+^(9)
+Reference^6^0^D4^^^
+^(10)
+Narrative^40^0^D5^^E5^
+^(11)
+END
+^SCREEN(1005,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(4)
+Amount^10^1^D2^^^D AMOUNTN,V01^XSBB
+^(5)
+Reference^6^0^D4^^^
+^(6)
+Narrative^40^0^D5^^E5^
+^(7)
+END
+^SCREEN(1006,1)
+Bill Number^6^1^BX^SB^B0^D NOTEX
+^(2)
+Bill Date^10^2^B1^^DAT^D DATE,DAT^XSXS
+^(3)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(4)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSBC
+^(5)
+Fees Billed^10^1^B2^^SW^D AMOUNT,V04^XSBC
+^(6)
+Time Removed^10^1^B3^^SW^D AMOUNT,V05^XSBC
+^(7)
+Disbursements^10^1^B4^^L0^D AMOUNT,V03^XSBC
+^(8)
+VAT Amount^10^1^B5^^E3^D AMOUNT,V02^XSBC
+^(9)
+Gross Amount^0^0^E2^^^
+^(10)
+Narrative^40^0^C5^^E5^
+^(11)
+Unpaid Disbs?^1^1^E8^^^D YESNO
+^SCREEN(1006,11,"IF")
+$e(H0,1)="X"
+^SCREEN(1006,12)
+END
+^SCREEN(1007,1)
+Date^10^2^R1^^DAT^D DATE,DAT^XSXS
+^(2)
+Net Amount^10^1^R2^^E2^D AMOUNTN
+^(3)
+VAT Amount^10^1^R3^^B6^D AMOUNTN,V03^XSBD
+^(4)
+Gross Amount^0^0^E3^^^D V09^XSBD
+^(5)
+Narrative^40^0^C5^^E5^
+^(6)
+Cashbook^3^1^DX^CB^ONE^D EXDISP,V04^XSBD
+^(7)
+END
+^SCREEN(1008,1)
+Date^10^2^R1^^DAT^D DATE,DAT^XSXS
+^(2)
+Net Amount^10^1^R2^^^D AMOUNTN,V02^XSBE
+^(3)
+VAT Amount^10^1^R3^^^D AMOUNTN,V03^XSBE
+^(4)
+Narrative^40^0^C5^^E5^
+^(5)
+Reinstate?^1^1^R6^^NO^D YESNO,V04^XSBE
+^SCREEN(1008,5,"IF")
+R2<0
+^SCREEN(1008,6)
+END
+^SCREEN(1009,1)
+Cashbook^2^1^DX^CB^ONE^D EXDISP,V03^XSBF
+^(2)
+CB Balance^0^0^B6^^^
+^(3)
+Date^10^2^O1^^DAT^D DATE,DAT^XSXS
+^(4)
+Net Amount^10^1^O2^^^D AMOUNTN,V01^XSBF
+^(5)
+VAT Amount^10^1^O3^^E3^D AMOUNTN,V02^XSBF
+^(6)
+Gross Amount^0^0^E2^^^
+^(7)
+Reference^6^0^O4^^^
+^(8)
+Account Code^4^4^AX^AB^^D CASE,EXDISP,V04^XSBF
+^(9)
+Narrative^40^0^O5^^E5^
+^(10)
+END
+^SCREEN(1010,1)
+Cashbook^2^1^DX^CB^ONE^D EXDISP,V03^XSBF
+^(2)
+CB Balance^0^0^B6^^^
+^(3)
+Date^10^2^O1^^DAT^D DATE,DAT^XSXS
+^(4)
+Net Amount^10^1^O2^^^D AMOUNTN,V01^XSBF
+^(5)
+VAT Amount^10^1^O3^^E3^D AMOUNTN,V02^XSBF
+^(6)
+Gross Amount^0^0^E2^^^
+^(7)
+Reference^6^0^O4^^^
+^(8)
+Account Code^4^4^AX^AB^^D CASE,EXDISP,V04^XSBF
+^(9)
+Narrative^40^0^O5^^E5^
+^(10)
+END
+^SCREEN(1011,1)
+Cashbook^2^1^DX^CB^ONE^D EXDISP,V03^XSBH
+^(2)
+CB Balance^0^0^B6^^^
+^(3)
+Date^10^2^O1^^DAT^D DATE,DAT^XSXS
+^(4)
+Amount^10^1^O2^^^D AMOUNT
+^(5)
+Reference^6^0^O4^^^
+^(6)
+Narrative^40^0^O5^^E5^
+^(7)
+END
+^SCREEN(1012,1)
+Cashbook^3^1^DX^CB^ONE^D EXDISP,V01^XSBI
+^(2)
+CB Balance^0^0^B6^^^
+^(3)
+END
+^SCREEN(1013,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSCA
+^(3)
+Disb Balance^0^0^M1^^^
+^(4)
+Bills Balance^0^0^M2^^^
+^(5)
+END
+^SCREEN(1014,1)
+Cashbook^3^1^DX^CB^^D EXDISP,V01^XSCB
+^(2)
+Balance^0^0^B6^^^
+^(3)
+END
+^SCREEN(1015,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSCD
+^(3)
+Disb Balance^0^0^M1^^^
+^(4)
+Bills Balance^0^0^M2^^^
+^(5)
+CL Balance^0^0^C1^^^
+^(6)
+WIP Balance^0^0^W1^^^
+^(7)
+END
+^SCREEN(1016,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Print or WP ?^1^1^PW^^PEE^D V01^XSDA
+^(4)
+END
+^SCREEN(1017,1)
+Amount^10^1^O2^^^D AMOUNTN
+^(2)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(3)
+Narrative^40^0^O5^^F5^
+^(4)
+END
+^SCREEN(1018,1)
+From Date^10^2^A1^^^D DATE,V01^XSDI
+^(2)
+To Date^10^2^A2^^DAT^D DATE,V02^XSDI
+^(3)
+END
+^SCREEN(1019,1)
+Account Code^4^4^AX^AB^^D CASE,EXDISP,V03^XSGJ
+^(2)
+A/c Balance^0^0^A0^^^
+^(3)
+Amount^10^1^A2^^^D AMOUNTN
+^(4)
+Period/year^1^1^A3^^^D CASE,V02^XSGJ
+^(5)
+Narrative^40^0^A5^^A4^
+^(6)
+END
+^SCREEN(1020,1)
+Automatic ?^1^1^A1^^A1^D YESNO
+^(2)
+Dates within^2^1^A2^^A2^D NUMBER
+^(3)
+Variance %^2^1^A3^^A3^D NUMBER
+^(4)
+END
+^SCREEN(1021,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^^D NUMBER,V03^XSAB
+^(3)
+END
+^SCREEN(1022,1)
+Date^10^2^A0^^DAT^D DATE,DAT^XSXS
+^(2)
+Fee Earner^2^1^FX^SF^ONE^D EXDISP
+^(3)
+END
+^SCREEN(1023,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Amount^10^1^D1^^^D AMOUNT,V01^XSEB
+^(4)
+END
+^SCREEN(1024,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSEC
+^(3)
+WIP Balance^0^0^M1^^^
+^(4)
+END
+^SCREEN(1025,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSFA
+^(3)
+CL Balance^0^0^B1^^^D V02^XSFA
+^(4)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(5)
+Amount^10^1^D2^^^D AMOUNT
+^(6)
+Reference^6^0^D4^^^
+^(7)
+Narrative^40^0^D5^^E5^
+^(8)
+END
+^SCREEN(1026,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSFB
+^(3)
+CL Balance^0^0^B1^^^D V09^XSFB
+^(4)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(5)
+Amount^10^1^D2^^^D AMOUNT,^XSFX(CX,MX)
+^(6)
+Reference^6^0^D4^^^
+^(7)
+Narrative^40^0^D5^^E5^
+^(8)
+END
+^SCREEN(1027,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSFC
+^(3)
+CL Balance^0^0^B1^^^D V09^XSFC
+^(4)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(5)
+Amount^10^1^D2^^^D AMOUNTN,^XSFX(CX,MX)
+^(6)
+Reference^6^0^D4^^^
+^(7)
+Narrative^40^0^D5^^E5^
+^(8)
+To Cashbook^2^1^DX^CB^ONE^D EXDISP,V05^XSFC
+^(9)
+To Pay Bill?^1^1^A1^^NO^D YESNO,V06^XSFC
+^(10)
+END
+^SCREEN(1028,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSFD
+^(3)
+Disb Balance^0^0^MLB1^^^D V02^XSFD
+^(4)
+From Cashbook^2^1^DX^CB^ONE^D EXDISP,V03^XSFD
+^(5)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(6)
+Amount^10^1^D2^^^D AMOUNTN
+^(7)
+Reference^6^0^D4^^^
+^(8)
+Narrative^40^0^D5^^E5^
+^(9)
+END
+^SCREEN(1029,1)
+Client Code^4^1^CX1^SC^CX^D CASE,EXDISP S CX=X
+^(2)
+Matter Code^4^1^MX1^SM^MX^D EX^XSXS,V01^XSFE
+^(3)
+CL Balance^0^0^B11^^^D V09^XSFE
+^(4)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(5)
+Amount^10^1^D2^^^D AMOUNT,^XSFX(CX1,MX1)
+^(6)
+Reference^6^0^D4^^^
+^(7)
+Narrative^40^0^D5^^E5^
+^(8)
+END
+^SCREEN(1030,1)
+Cashbook^3^1^DX^CB^^D NUMBER
+^(2)
+Description^30^1^C1^^^
+^(3)
+Sort Code^8^0^C2^^^
+^(4)
+Account No^15^0^C3^^^
+^(5)
+@F3@?^1^1^C4^^NO^D V01^XSGE
+^SCREEN(1030,5,"IF")
+DX<100
+^SCREEN(1030,6)
+END
+^SCREEN(1031,1)
+Confirm^4^2^A1^^^D CASE,V02^XSAD
+^(2)
+Detail?^1^1^A2^^^D YESNO
+^(3)
+END
+^SCREEN(1032,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSFG
+^(3)
+CL Balance^0^0^B1^^^D V02^XSFG
+^(4)
+Nominal Int^0^0^B2^^^D V03^XSFG
+^(5)
+END
+^SCREEN(1033,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSFH
+^(3)
+CL Balance^0^0^B1^^^D V02^XSFH
+^(4)
+Last Interest^0^0^B3^^^
+^(5)
+Nominal Int^0^0^B2^^^
+^(6)
+From Cashbook^2^1^DX^CB^ONE^D EXDISP,V03^XSFH
+^(7)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(8)
+Amount^10^1^D2^^^D AMOUNT
+^(9)
+Reference^6^0^D4^^^
+^(10)
+END
+^SCREEN(1034,1)
+Min Amount^10^1^NX^^^D NUMBER
+^(2)
+No of Days^4^1^A1^^^D NUMBER
+^(3)
+END
+^SCREEN(1035,1)
+Min Amount^10^1^IX^^^D NUMBER
+^(2)
+Rate^10^1^A1^^^D AMOUNT
+^(3)
+END
+^SCREEN(1036,1)
+Practice Name^30^1^A1^^^
+^(2)
+S/W Licence^10^10^A3^^^D CASE,V02^XSGA
+^(3)
+VAT Cash Base^1^1^A4^^^D YESNO,V01^XSGA
+^(4)
+VAT Rate^5^1^A9^^^D AMOUNT
+^(5)
+Time Units^2^1^A5^^^D NUMBER
+^(6)
+Auto Day-End^1^1^A10^^^D YESNO
+^(7)
+Date Check^1^1^A12^^^D YESNO
+^(8)
+Detailed Time^1^1^A11^^^D YESNO
+^(9)
+O'draw Client^1^1^A15^^^D YESNO
+^(10)
+Def Office CB^2^1^A13^CB^^D EXDISP,V03^XSGA
+^(11)
+Def Charge Gp^2^0^A17^SR^^I X'="" D ALPHNUM,CASE,EXDISP
+^(12)
+W/off Disbs^1^1^A16^^^D YESNO
+^(13)
+Last Day-End^0^0^A6^^^
+^(14)
+Last Per-End^0^0^A7^^^
+^(15)
+Next Year-End^10^2^A8^^^D DATE
+^(16)
+Last Item No^0^0^A14^^^
+^(17)
+END
+^SCREEN(1037,1)
+Fee Earner^2^1^FX^SF^^D NUMBER
+^(2)
+F/E Name^30^1^F1^^^
+^(3)
+END
+^SCREEN(1038,1)
+Charge Group^2^1^RX^SR^^D ALPHNUM,CASE
+^(2)
+Description^25^1^R1^^^
+^(3)
+END
+^SCREEN(1039,1)
+Account Code^4^4^AX^AB^^D V01^XSGD
+^(2)
+Description^30^1^A1^^^
+^(3)
+A/C Balance^0^0^A3^^^
+^(4)
+Budget^10^0^B1^^^D AMOUNTN,V02^XSGD
+^(5)
+System A/C ?^0^0^A5^^^
+^(6)
+END
+^SCREEN(1040,1)
+Client Code^4^1^CX^SC^^
+^(2)
+END
+^SCREEN(1041,1)
+Option (ABC)^1^1^A3^^^D CASE,V03^XSDI
+^(2)
+END
+^SCREEN(1042,1)
+Cashbook^2^1^DX^CB^ONE^D EXDISP,V01^XSBM
+^(2)
+Gross Amount^10^1^A1^^^D AMOUNTN
+^(3)
+Date^10^2^A2^^DAT^D DATE,DAT^XSXS
+^(4)
+Reference^6^0^A3^^^
+^(5)
+END
+^SCREEN(1043,1)
+Activity^2^1^A1^SA^^D CASE,EXDISP,V01^XSGC
+^(2)
+Hourly Rate^8^0^A2^^^I X'="" D AMOUNT
+^(3)
+Rate per Item^8^0^A3^^^D V02^XSGC
+^(4)
+END
+^SCREEN(1044,1)
+Activity Code^2^1^SX^^^D CASE
+^(2)
+Description^25^1^A1^^^
+^(3)
+END
+^SCREEN(1045,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSEA
+^(3)
+Charge Group^2^1^RX^SR^M7A^D CASE,EXDISP
+^(4)
+Activity^2^1^A3^SA^M7B^D CASE,EXDISP,V02^XSEA
+^(5)
+No of Units^4^1^A4^^^D NUMBER,V03^XSEA
+^SCREEN(1045,5,"IF")
+S2
+^SCREEN(1045,6)
+No of Items^4^1^A5^^^D NUMBER,V04^XSEA
+^SCREEN(1045,6,"IF")
+S1
+^SCREEN(1045,7)
+END
+^SCREEN(1046,1)
+Bill Number^6^1^BX^SB^^D EXIST,V01^XSBD
+^(2)
+END
+^SCREEN(1047,1)
+Client^4^1^CX^SC^^D EXDISP
+^(2)
+Matter^4^1^MX^SM^^D EX^XSXS
+^(3)
+Bill Date^10^2^B1^^^
+^(4)
+Net Billed^10^1^E2^^^
+^(5)
+VAT Amount^10^1^B6^^^
+^(6)
+O/S Amount^10^1^B8^^^
+^(7)
+END
+^SCREEN(1048,1)
+Bill Number^6^1^BX^SB^^D EXIST,V03^XSFC
+^(2)
+O/S Balance^0^0^BB8^^^
+^(3)
+VAT Amount^10^1^R3^^^D AMOUNTN,V04^XSFC
+^(4)
+END
+^SCREEN(1049,1)
+Cashbook^2^1^DX2^CB^^D EXDISP,V06^XSBH
+^(2)
+CB Balance^0^0^B6^^^
+^(3)
+END
+^SCREEN(1050,1)
+Consistency?^1^1^C1^^YES^D YESNO
+^(2)
+Re-index?^1^1^C2^^NO^D YESNO
+^(3)
+Compress?^1^1^C3^^NO^D YESNO
+^(4)
+END
+^SCREEN(1051,1)
+Client Code^4^1^CX2^SC^^D CASE,EXDISP S CX=X
+^(2)
+Matter Code^4^1^MX2^SM^^D EX^XSXS,V04^XSFE
+^(3)
+CL Balance^0^0^B21^^^D V05^XSFE
+^(4)
+END
+^SCREEN(1052,1)
+Account Code^4^4^AX2^AB^^D CASE,EXDISP,V04^XSBF,V03^XSBJ
+^(2)
+A/c Balance^0^0^A3^^^
+^(3)
+END
+^SCREEN(1053,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Cashbook^2^1^DX^CB^ONE^D EXDISP
+^(4)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(5)
+Amount^10^1^D2^^^D AMOUNT,V01^XSBK
+^(6)
+Reference^6^0^D4^^^
+^(7)
+Narrative^40^0^D5^^E5^
+^(8)
+END
+^SCREEN(1054,1)
+Client Code^4^1^CX1^SC^CX^D CASE,EXDISP S CX=X
+^(2)
+Matter Code^4^1^MX1^SM^MX^D EX^XSXS,V01^XSBL
+^(3)
+Disbursements^10^1^A1^^M1^D AMOUNT,V02^XSBL
+^(4)
+Work-in-Progr^10^1^A2^^S1^D AMOUNT,V03^XSBL
+^(5)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(6)
+Narrative^40^0^D5^^E5^
+^(7)
+END
+^SCREEN(1055,1)
+Client Code^4^1^CX2^SC^^D CASE,EXDISP S CX=X
+^(2)
+Matter Code^4^1^MX2^SM^^D EX^XSXS,V04^XSBL
+^(3)
+END
+^SCREEN(1056,1)
+Bill Number^6^1^BX^^^
+^(2)
+Bill Date^10^2^B1^^^D DATE
+^(3)
+Client Code^4^1^B2^^^D CASE
+^(4)
+Matter Code^4^1^B3^^^D NUMBER
+^(5)
+Fees Element^10^1^B4^^^D AMOUNT
+^(6)
+Disb Element^10^1^B5^^^D AMOUNT
+^(7)
+VAT Amount^10^1^B6^^^D AMOUNT,V01^XSGK
+^(8)
+Gross Amount^0^0^E0^^^
+^(9)
+O/S Gross Amt^10^1^B8^^NIL^D AMOUNT
+^(10)
+Bill Status^1^1^B9^^DFF^D CASE
+^(11)
+END
+^SCREEN(1057,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Net Amount^10^1^B3^^^D AMOUNTN,V04^XSBM
+^(4)
+VAT Amount^10^1^B4^^E4^D AMOUNTN,V05^XSBM
+^(5)
+Narrative^40^0^B5^^B5^
+^(6)
+END
+^SCREEN(1058,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V01^XSEF
+^(3)
+To Date^10^2^A1^^DAT^D DATE,DAT1^XSXS
+^(4)
+END
+^SCREEN(1059,1)
+Client Detail^1^1^A1^^^D YESNO
+^(2)
+Matter Detail^1^1^A2^^^D YESNO
+^(3)
+Bills^1^1^A3^^^D YESNO
+^(4)
+A/c Balances^1^1^A4^^^D YESNO
+^(5)
+END
+^SCREEN(1060,1)
+P/e Confirm^4^2^A1^^^D CASE,V01^XSHD
+^(2)
+Print Detail?^1^1^A2^^^D YESNO
+^(3)
+END
+^SCREEN(1061,1)
+Y/e Confirm^4^2^A1^^^D CASE,V01^XSHE
+^(2)
+Year-end date^10^2^A2^^A2^D DATE,DAT1^XSXS
+^(3)
+END
+^SCREEN(1062,1)
+Bills >^10^0^A1^^^I X'="" D AMOUNTN
+^(2)
+      <^10^0^A2^^^I X'="" D AMOUNT,V02^XSDJ
+^(3)
+Disbs >^10^0^A3^^^I X'="" D AMOUNTN
+^(4)
+      <^10^0^A4^^^I X'="" D AMOUNT,V04^XSDJ
+^(5)
+Client Acct >^10^0^A5^^^I X'="" D AMOUNTN
+^SCREEN(1062,5,"IF")
+$e(H0,1)="X"
+^SCREEN(1062,6)
+            <^10^0^A6^^^I X'="" D AMOUNT,V06^XSDJ
+^SCREEN(1062,6,"IF")
+$e(H0,1)="X"
+^SCREEN(1062,7)
+Client Int >^10^0^A11^^^I X'="" D AMOUNTN
+^SCREEN(1062,7,"IF")
+$e(H0,1)="X"
+^SCREEN(1062,8)
+           <^10^0^A12^^^I X'="" D AMOUNT,V07^XSDJ
+^SCREEN(1062,8,"IF")
+$e(H0,1)="X"
+^SCREEN(1062,9)
+WIP >^10^0^A7^^^I X'="" D AMOUNTN
+^(10)
+    <^10^0^A8^^^I X'="" D AMOUNT,V08^XSDJ
+^(11)
+All or Some^1^1^A9^^^D V09^XSDJ
+^(12)
+END
+^SCREEN(1063,1)
+Confirm^4^2^A1^^^D CASE,V01^XSFK
+^(2)
+From Date^10^0^A2^^^D DATE,V02^XSFK
+^(3)
+To Date^10^2^A3^^DAT^D DATE,V03^XSFK
+^(4)
+Interest only^1^1^A4^^NO^D YESNO
+^(5)
+END
+^SCREEN(1064,1)
+Account Code^4^4^AX^AB^^D CASE,EXDISP,V01^XSCE
+^(2)
+A/c Balance^0^0^A3^^^
+^(3)
+END
+^SCREEN(1065,1)
+Account Code^4^4^AX1^AB^^D CASE,EXDISP,V04^XSBF,V01^XSBJ
+^(2)
+A/c Balance^0^0^A3^^^
+^(3)
+END
+^SCREEN(1066,1)
+Client detail^1^1^SC^^NO^D YESNO
+^(2)
+Matter detail^1^1^SM^^NO^D YESNO
+^(3)
+Client ledger^1^1^CL^^NO^D YESNO
+^(4)
+Matter ledger^1^1^ML^^NO^D YESNO
+^(5)
+Billed disbs^1^1^SD^^NO^D YESNO
+^(6)
+Work-in-Prog^1^1^SW^^NO^D YESNO
+^(7)
+Detailed time^1^1^TE^^NO^D YESNO
+^(8)
+Cashbooks^1^1^CB^^NO^D YESNO
+^(9)
+Bill register^1^1^SB^^NO^D YESNO
+^(10)
+A/c balances^1^1^AB^^NO^D YESNO
+^(11)
+Nominal ledgr^1^1^AY^^NO^D YESNO
+^(12)
+Fee earners^1^1^SF^^NO^D YESNO
+^(13)
+Fee rates^1^1^SA^^NO^D YESNO
+^(14)
+VAT file^1^1^SV^^NO^D YESNO
+^(15)
+Parameters^1^1^SZ^^NO^D YESNO
+^(16)
+END
+^SCREEN(1067,1)
+Omit zeros^1^1^A1^^YES^D YESNO
+^(2)
+END
+^SCREEN(1068,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+END
+^SCREEN(1069,1)
+Search For^20^1^S1^^^
+^(2)
+END
+^SCREEN(1070,1)
+@F1@?^1^0^A4^^^D YESNO
+^(2)
+END
+^SCREEN(1071,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS,V02^XSAJ
+^(3)
+Date Closed^10^0^D1^^E1^D DATE,V03^XSAJ
+^(4)
+END
+^SCREEN(1072,1)
+File Name^11^3^FN^^^D V01^AAIN
+^(2)
+END
+^SCREEN(1073,1)
+Opened/Closed^1^1^X3^^^D V01^XSAK
+^(2)
+END
+^SCREEN(1074,1)
+Directory^40^3^D0^^D0^D V01^AASET
+^(2)
+END
+^SCREEN(1075,1)
+Unique ID^6^1^D0^^^D NUMBER
+^(2)
+Start Date^10^2^D1^^DAT^D DATE
+^(3)
+End Date^10^2^D2^^^D DATE,V01^XSGF
+^(4)
+Pay't/Receipt^1^1^D3^^^D V02^XSGF
+^(5)
+Frequency^4^2^D4^^^D V03^XSGF
+^(6)
+Cashbook^2^1^DX^CB^ONE^D EXDISP
+^(7)
+Net Amount^10^1^O2^^^D AMOUNT,V04^XSGF
+^(8)
+VAT Amount^10^1^O3^^E3^D AMOUNT,V05^XSGF
+^(9)
+Gross Amount^0^0^E2^^^
+^(10)
+Reference^6^0^O4^^^
+^(11)
+Account Code^4^4^AX^AB^^D CASE,EXDISP,V04^XSBF:(NEW!AMD)
+^(12)
+Narrative^40^0^O5^^E5^
+^(13)
+END
+^SCREEN(1076,1)
+Omit Closed?^1^1^A9^^YES^D YESNO
+^(2)
+END
+^SCREEN(1077,1)
+Summary Only?^1^1^A1^^^D YESNO
+^(2)
+END
+^SCREEN(1078,1)
+Period^2^1^Q1^^^D NUMBER
+^(2)
+END
+^SCREEN(1079,1)
+Cashbook^3^1^DX^CB^ONE^D EXDISP,V01^XSCK
+^(2)
+Date^10^2^D1^^DAT^D DATE,DAT1^XSXS
+^(3)
+END
+^SCREEN(1080,1)
+Client Code^4^1^CX^SC^^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^^D EX^XSXS,V02^XSGL
+^(3)
+Disb Balance^0^0^E1^^^
+^(4)
+Bills Balance^0^0^E2^^^
+^(5)
+Amount^10^1^A2^^^D AMOUNTN
+^(6)
+Disb/Bill^1^1^E3^^^D CASE,V03^XSGL
+^(7)
+Narrative^40^0^A5^^A4^
+^(8)
+END
+^SCREEN(1081,1)
+Clients Only?^1^1^A10^^NO^D CASE,YESNO
+^(2)
+END
+^SCREEN(1082,1)
+Creditor A/c^4^4^AX2^AB^^D CASE,EXDISP,V04^XSBF,V01^XSBP
+^(2)
+A/c Balance^0^0^A3^^^
+^(3)
+Date^10^2^O1^^DAT^D DATE,DAT^XSXS
+^(4)
+Net Amount^10^1^O2^^^D AMOUNTN,V01^XSBF
+^(5)
+VAT Amount^10^1^O3^^E3^D AMOUNTN,V02^XSBF
+^SCREEN(1082,5,"IF")
+^SZ("VCB")'="N"
+^SCREEN(1082,6)
+Gross Amount^0^0^E2^^^
+^SCREEN(1082,6,"IF")
+^SZ("VCB")'="N"
+^SCREEN(1082,7)
+Reference^6^0^O4^^^
+^(8)
+Expense A/c^4^4^AX1^AB^^D CASE,EXDISP,V04^XSBF,V03^XSBP
+^(9)
+Narrative^40^0^O5^^E5^
+^(10)
+END
+^SCREEN(1083,1)
+Client Code^4^1^CX^SC^^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^^D EX^XSXS,V02^XSGL
+^(3)
+CL Balance^0^0^E1^^^
+^(4)
+Amount^10^1^A2^^^D AMOUNTN
+^(5)
+Narrative^40^0^A5^^A4^
+^(6)
+END
+^SCREEN(1084,1)
+Date^10^2^D1^^DAT^D DATE,DAT^XSXS
+^(2)
+Net Amount^10^1^D2^^^D AMOUNTN,V01^XSBQ
+^(3)
+VAT Amount^10^1^D3^^E1^D AMOUNTN,V02^XSBA
+^(4)
+Gross Amount^0^0^E2^^^
+^(5)
+Narrative^40^0^O5^^F5^
+^(6)
+END
+^SCREEN(1085,1)
+Bill Number^6^1^BX^SB^^D EXIST,V03^XSBQ
+^(2)
+O/S Amount^0^0^BB8^^^
+^(3)
+Client Code^0^0^CX^SC^^D EXDISP
+^(4)
+Matter Code^0^0^MX^SM^^D EX^XSXS
+^(5)
+END
+^SCREEN(1086,1)
+Cashbook^3^3^DX^CB^^D EXDISP,V01^XSFM
+^(2)
+From Date^10^2^D1^^DAT^D DATE,DAT1^XSXS
+^(3)
+To Date^10^2^D2^^DAT^D DATE,DAT1^XSXS,V02^XSFM
+^(4)
+END
+^SCREEN(1098,1)
+Option^1^1^A1^^^D V01^LEGUP
+^(2)
+Continue?^1^1^A2^^^D YESNO
+^(3)
+END
+^SCREEN(1099,1)
+Practice Name^30^1^A1^^^
+^(2)
+Practitioner^30^1^A2^^^
+^(3)
+S/W Licence^10^10^A3^^^D CASE,V02^XSGA
+^(4)
+VAT Cash Base^1^1^A4^^^D YESNO
+^(5)
+Time Units^2^1^A5^^^
+^(6)
+Std Fee Rate^6^1^A7^^^D AMOUNT
+^(7)
+Type of Firm^1^1^A6^^^D CASE,V01^XSINSTAL
+^SCREEN(1099,7,"IF")
+1=1
+^SCREEN(1099,8)
+Next Year-End^10^2^A8^^^D DATE
+^(9)
+END
+^SCREEN(1100,1)
+Rate table^4^1^RX^^^D ALPHNUM,CASE
+^(2)
+Eff date^10^2^D1^^DAT^D DATE,V01^ICAA
+^(3)
+END
+^SCREEN(1101,1)
+Client Code^4^1^CX^SC^CX^D CASE,EXDISP
+^(2)
+Matter Code^4^1^MX^SM^MX^D EX^XSXS
+^(3)
+Rate Table^4^1^RX^^^D CASE,V01^ICAC
+^(4)
+Start Date^10^2^DP^^^D DATE,V02^ICAC
+^(5)
+End Date^10^2^DQ^^DAT^D DATE,V03^ICAC
+^(6)
+END
+^SCREEN("g1",1)
+Date of birth^10^2^C1^^D1^D DATE,DAT1^XSXS
+^(2)
+END
+^SCREEN("xb",1)
+Next Year-End^10^2^A1^^^d DATE
+^(2)
+END
