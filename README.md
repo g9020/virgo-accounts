@@ -11,3 +11,17 @@ The software is provided under an MIT licence.
 Full details about Virgo Accounts can be found at [virgoaccounts.co.uk](http://www.virgoaccounts.co.uk). For the sake of completeness a copy of the user manual is also included in this repository.
 
 All trademarks and registered trademarks acknowledged.
+
+## Example screenshots
+
+### Main menu
+
+![main menu](images/screenshot-1.png)
+
+### Bank reconciliation
+
+![bank reconciliation](images/screenshot-2.png)
+
+### Matter maintenance
+
+![matter maintenance](images/screenshot-3.png)
