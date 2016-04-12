@@ -422,65 +422,6 @@ V02	Q:$d(ERR)  S %DAT=X D DMY2H^DATE S D2=%H
 	I D1>%H S ERR="May not be earlier than From date"
 	Q
 
-DESPOOL
-DESPOOL	;gri,gjl:A:B-UTILITY;04:52 PM  27 Oct 2000;
-	;;Copyright (C) 1991 DataTree, Inc.  All rights reserved.
-	; amended by Graham Irwin 1994, 2000
-
-	; Simple manual de-spooler
-	; ------------------------
-
-	w /aa
-	i $o(^%SPOOL(""))'="" g init
-none	w *7,"  Nothing to de-spool  ",! h 3
-	q
-init
-	w # n
-	s sn="",sn=$o(^%SPOOL(sn))
-
-begin
-listsn
-getbin
-	k blist
-	s bin="",n=0 f  s bin=$o(^%SPOOL(sn,bin)) q:bin=""  d
-	. i '$d(^%SPOOL(sn,bin,0)) k ^%SPOOL(sn,bin) q  ;buggered header
-	. s x=^%SPOOL(sn,bin,0) i $p(x,"|",2)="" q  ;still being spooled
-	. s n=n+1,blist(n)=bin_"|"_$p(x,"|",1)_"|"_$zp(^(99999999999999))
-	i 'n w !,"nothing in ",sn," to de-spool" q
-listbin
-	w !!,"The following jobs are currently filed with Spooler ",sn,":"
-	w !,"      -No.-         -time spooled-              -pages-"
-	f i=1:1:n s x=blist(i) d
-	. w !,?7,i,?21,$$^%now($p(x,"|",2)),?50,$p(x,"|",3)
-
-	w !!,"Enter the No. of the job you want to de-spool: "
-	r m,! i m="" q
-	s m=$tr(m,$c(0,9,32),"") i m'?1n.n g listbin
-	i '$d(blist(m)) g listbin
-	s bin=$p(blist(m),"|",1),h=$p(blist(m),"|",2)
-
-	w !,"Enter the Page No. from which you want to start: "
-	r sp,! i +sp=0 s sp=1
-	i '$d(^%SPOOL(sn,bin,sp)) g listbin
-
-	w !,"Print to " s dev=$$^%mdevice w ! i dev=-1 g listbin
-	s nl=$p(dev,$c(22),2),mc=$p(dev,$c(22),3),dev=$p(dev,$c(22),1)
-
-	u 0 w #,"...printing ",sn,"(",bin,")  spooled:",$$^%now(h)
-	u dev f p=sp:1 q:'$d(^%SPOOL(sn,bin,p))  w:dev'=1&(p>1) # d
-	. f l=1:1 q:'$d(^%SPOOL(sn,bin,p,l))  w ^(l),! d testend q:x=27
-	i +dev'=1 w # c dev
-	u 0 w !
-	i $$^%myesno("Delete spool file","yes")="Y" d
-	. LOCK +^%SPOOL(sn)
-	. k ^%SPOOL(sn,bin)
-	. LOCK -^%SPOOL(sn)
-	g getbin
-
-testend	q:+dev'=1
-	i $y>22 s x=$$^Cont(1) w #
-	q
-
 DOSDEV
 DOSDEV	;GRI;09:03 AM  18 Jan 2002
 	;=======================================================
@@ -1205,30 +1146,6 @@ ALPHNUM	I X'?.AN S ERR="Must be alphanumeric"
 	Q
 
 CASE	S X=$zconvert(X,"U") Q
-
-ISBN
-ISBN	;gri;01:16 PM  5 Jan 2006;
-
-	S A="10,9,8,7,6,5,4,3,2"
-	;S Y="095333310",X=Y
-	S Y="095420470",X=Y
-	F K=1:1:10 D
-	.S J=0
-	.F I=1:1:9 S J=J+($e(X,I)*$p(A,",",I))
-	.S Z=11-(J#11) S:Z=10 Z="X" S:Z=11 Z=0
-	.W $e(X,1),"-",$e(X,2,8),"-",$e(X,9),"-",Z,!
-	.S X=X+1,X=$e("00000000",1,9-$l(X))_X
-
-	W !
-	S A="1,3,1,3,1,3,1,3,1,3,1,3"
-	S X="978"_Y
-	F K=1:1:10 D
-	.S J=0
-	.F I=1:1:12 S J=J+($e(X,I)*$p(A,",",I))
-	.S Z=10-(J#10) S:Z=10 Z=0
-	.W $e(X,1,4),"-",$e(X,5,11),"-",$e(X,12),"-",Z,!
-	.S X=X+1
-	Q
 
 KILLPW
 KILLPW	;GRI;12:55 PM  21 Sep 1994;
@@ -4601,95 +4518,6 @@ LINE	S CB=^CB(DX,IX) I IX=0 Q
 	Q
 
 TOTAL	W ?34,"---------",?47,"---------",!?5,"Total",?33,$j(E3,10,2),?46,$j(E2,10,2) Q
-
-XSCOMPACT
-XSCOMPACT	;gri,djb:A:B-DSUTIL;03:41 PM  20 Sep 1993;
-	;;Copyright (C) 1990,1991 DataTree Inc. All rights reserved.
-
-	new
-
-select	w !!,"Compact dataset files"
-	;s dsid=$$^%dsselect q:dsid
-	;s dsid=+$p(dsid,$c(22),2)
-	s dsid=772 ;USER-GBL
-	d dslist^%dsbuild1 s xdsl=dsid_"|"_dsl(dsid) k dsl
-	d ^%dsinfo i '$d(vsignature) s vsignature=0
-	s dsfile=$p(dsfile,".",1)
-	i (dsid=$v(1,250,-2))!(dsid=$v(1,252,-2)) d badds q
-	l ^%dsr(dsid):1 e  w !!,"Another compaction in progress" q
-	i dsid=$v(2,926,-2) d badds q
-	s MaxRLink=$s(vsignature=58838:65535*65537,1:65535)
-	s restart=(indexroot=MaxRLink),err=""
-	i restart d  q:err'=""  g begin
-	. w !!,"Restarting compaction process"
-	. zetrap recovererr
-	. c 11 o 11:(file=dsfile_".CHK":mode="r") u 11
-	. k ^%dsr($znode,$j),^%dsc($znode,$j)
-	. f  r x#2 s x=$zwa(x) q:'x  r x#x,y#2 s y=$zwa(y) r y#y s @x=y
-	. c 11 u 0
-	. q
-	;s f="Data packing factor (in %):3\"
-	;s f=f_"Empty page ratio (in %):2\"
-	;s f=f_"Repair mode:8:YES,NO\"
-	;s v="99\0\NO\",v=$$^%mform(f,v),q=$p(v,$c(22),1),v=$p(v,$c(22),2) q:q
-	s packfactor=99,packfactor=$s($l(packfactor):packfactor,1:99)/100
-	s efactor=0,efactor=efactor/100
-	s repair="NO",repair=(repair="YES")
-	s ok=$$check^%dscompact0 q:'ok
-
-begin	w !,"Beginning compaction for ",dsfile," at ",$$^%now
-	zitrap intrps^%dscompact
-	i repair,'restart d sort^%dscompactr i err'="" l  q
-	w !,"Dismounting dataset"
-	s ctrlc=0
-	zitrap intrp^%dscompact
-	d dsmount i err'="" w err q
-	s named=dsfile_".DAT",namei=dsfile_".IND"
-	s fhd=$$openfile^%dsfileop(named,"w")
-	s fhi=$$openfile^%dsfileop(namei,"w")
-	i 'fhd!('fhi) w !,"Unable to reopen files!" g closefiles
-	s chunksize=$$size^%dsfileop(fhi) ;how much room in "temp" index file?
-	i chunksize<datasize!(chunksize<8192) d  g closefiles
-	. w "Index file too small"
-	c 11 o 11:(file=dsfile_".CHK":mode="w") ;checkpoint file for intrp
-	w !,"Compacting data file"
-	d ^%dscompact1
-
-closefiles
-	b 0
-	i fhd s fhd=$$closefile^%dsfileop(fhd)
-	i fhi s fhi=$$closefile^%dsfileop(fhi)
-	k dbuf,mcache
-	s err=$$remount^%dsbuild1(xdsl)
-	i err w $zename(err)
-	lock
-	b 1
-	q
-
-dsmount	s err="" zetrap dsmounterr
-	zc dsclose(dsid)
-	q
-
-dsmounterr
-	i $zerr=49187 q
-	s err="Can't dismount dataset: "_$zename
-	q
-
-recovererr
-	. s err="Error reading recovery file "_dsfile_".CHK"
-	. u 0 w !,err c 11 q
-
-badds	w !!,"Can't compact that dataset"
-	q
-
-intrp	w !!,"Interrupting... please wait"
-	s ctrlc=1
-	q
-
-intrps	w !!,"Interrupting the sort phase - dataset has not been modified",!
-	zquit
-
-exit	q
 
 XSDA
 XSDA	;GRI,,,;09:08 AM  18 Jan 2002
