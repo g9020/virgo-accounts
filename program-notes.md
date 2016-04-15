@@ -1,10 +1,14 @@
-# Virgo Accounts Program Notes
+# Virgo Accounts Programmers' Notes
 
-The source code for Virgo Accounts is supplied in two files VIRGO.RSA and VIRGO.GSA. The former contains all the routines (plus a few strays) in routine save format, and the latter contains the required globals (^HELP, ^MENU, ^MENU1, ^NAMES and ^SCREEN) in global save format.
+The source code for *Virgo Accounts* is supplied in two files VIRGO.RSA and VIRGO.GSA. The former contains all the routines (plus a few strays) in DataTree routine save format, and the latter contains the required globals (^HELP, ^MENU, ^MENU1, ^NAMES and ^SCREEN) in global save format. Most but not all of the routines are also provided in .m files.
 
-Whilst DTM supports multi-user applications, Virgo Accounts does not include any record or file locking and so is a single-user system.
+Two routines (DESPOOL and XSCOMPACT) have been omitted as they contain code that is the copyright of DataTree (now InterSystems).
 
-These brief (and possibly incomplete) notes describe the development and maintenance tools, and the subroutines used in Virgo Accounts. The application routine names are generally four letters beginning XS. E&OE
+Whilst DTM supports multi-user applications, *Virgo Accounts* does not include any record or file locking and so is a single-user system.
+
+These brief (and possibly incomplete) notes describe the development and maintenance tools, and the subroutines used in *Virgo Accounts*. The application routine names are generally four letters beginning XS.
+
+E&OE
 
 ## Standard Utilities, Subroutines and Globals
 
